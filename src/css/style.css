@@ -1,0 +1,446 @@
+body {
+    padding: 0;
+    margin: 0;
+    /*adap*/
+    background-image: url("https://main-cdn.goods.ru/hlr-system/1628137414/100023899850b0.jpg");
+    background-size: cover;
+    color: #fff5b2;/*rgba(204, 197, 197, 0.918);*/
+    font: "Times New Roman", Georgia, 32px/1.4em cinzel,serif;
+    text-shadow: 1px 1px 1px #000;
+}
+.logo {
+ margin-right: 400px;
+}
+a {
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: brown;
+}
+header {
+  /*adap*/
+  width: 100%;
+  margin: 0 auto;
+  /*adap*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-size: 150%;
+    background-color: grey;
+    opacity: 0.7;
+}
+main {
+  /*adap*/
+  max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+}
+button {
+    color: #fff5b2;/*rgba(204, 197, 197, 0.918);*/
+    font: "Times New Roman", Georgia, 32px/1.4em cinzel,serif;    
+    text-shadow: 2px 2px 2px #000;
+    padding: 14px 24px 12px;
+    font-family: "Helvetica";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display:block;
+    width:400px;
+    margin:20px auto;
+    text-align:center;
+    background-color: rgba(128, 128, 128, 0.377);
+    opacity: 0.7;
+  }
+  button:after {
+    padding: 0;
+    border: 2px solid #000000;
+    content: '';
+    width: 99%;
+    height: 67px;
+    display: block;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+  }
+  button:before {
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+    content: '';
+    width: 100%;
+    height: 60px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-left: 15px solid white;
+    box-shadow: -20px 30px 30px white;
+    background: transparent;
+    top: 0px;
+    left: -15px;
+    margin-left: -1px;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+   button:hover:before, button:active:before, button:focus:before {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: translate(115%, 0);
+    -moz-transform: translate(115%, 0);
+    -ms-transform: translate(115%, 0);
+    -o-transform: translate(115%, 0);
+    transform: translate(115%, 0);
+   }
+   .icons {
+    width: 100%;
+       display: flex;
+       justify-content: space-around;
+   }
+
+
+   /* общие стили для лент */
+.corner-ribbon{
+    width: 700px;
+    background: #786518;
+    position: absolute;
+    top: 25px;
+    left: -50px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    border: #000;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  /* фиксируем ленточки */
+  .corner-ribbon.sticky{
+    position: fixed; 
+  }
+  /* легкая тень */
+  .corner-ribbon.shadow{
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+  }
+  /* позиции лент */
+  .corner-ribbon.top-left{ /* верхний угол слева */
+    top: 105px;
+    left: -145px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    background-image: url('https://onthegolinens.com/media/catalog/large/panne-velvet/cranberry.jpg');
+    opacity: 0.9;
+  }
+  .corner-ribbon.top-right{ /* верхний угол справа */
+    top: 105px;
+    right: -145px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background-image: url('https://onthegolinens.com/media/catalog/large/panne-velvet/cranberry.jpg');
+    opacity: 0.9;
+  }
+
+  footer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+  }
+
+  
+  .socialIcons {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    top:200px;
+
+  }
+  .socialIcons li {
+    display: inline-block;
+    margin: auto 10px;
+  }
+  .socialIcons li a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 4rem;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    color: #fff5b2;
+    transition: all .5s ease;
+    transform-origin: left;
+    transform: rotateY(-30deg);
+    text-shadow: 10px 0px 1px #131313, 10px 0px 1px #070707, 10px 0px 1px black, 10px 0px 1px black;
+  }
+  .socialIcons li a:hover {
+    color: #202020;
+    transform: rotate(0deg);
+    text-shadow: 0px 0px 1px #131313, 0px 0px 1px #070707, 0px 0px 1px black, 0px 0px 1px black;
+  }
+  
+
+
+  /*опыт работы анимация*/
+
+   @import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed");
+  
+   
+   .main-container {
+     position: absolute;
+     top: 74%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: #fff5b2;
+   }
+   
+   .first-container, .second-container {
+     cursor: pointer;
+     position: relative;
+   }
+   .first-container h1  {
+     position: relative;
+     letter-spacing: 1px;
+     font-size: 3vw;
+   }
+   .second-container h1 {
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 4vw;
+   }
+   
+   .first-container {
+     margin-bottom: 5px;
+   }
+   
+   span {
+     display: inline-block;
+     position: relative;
+     margin-right: 5px;
+   }
+   span:after {
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 0;
+     top: 0;
+     left: 0;
+     transition: 0.6s;
+     z-index: -5;
+   }
+   
+   .share:hover > h1 > span:nth-child(1):after {
+     background: white;
+     width: 100%;
+     transition: 0.6s;
+     transition-delay: 100ms;
+     transform: rotate(-25deg);
+   }
+   
+   .share:hover > h1 > span:nth-child(1) {
+     color: #39393B;
+     transition-delay: 110ms;
+   }
+   
+   .share:hover > h1 > span:nth-child(2):after {
+     background: white;
+     width: 100%;
+     transition: 0.6s;
+     transition-delay: 200ms;
+     transform: rotate(-20deg);
+   }
+   
+   .share:hover > h1 > span:nth-child(2) {
+     color: #39393B;
+     transition-delay: 220ms;
+   }
+   
+   .share:hover > h1 > span:nth-child(3):after {
+     background: white;
+     width: 100%;
+     transition: 0.6s;
+     transition-delay: 300ms;
+     transform: rotate(-15deg);
+   }
+   
+   .share:hover > h1 > span:nth-child(3) {
+     color: #39393B;
+     transition-delay: 330ms;
+   }
+   
+   .share:hover > h1 > span:nth-child(4):after {
+     background: white;
+     width: 100%;
+     transition: 0.6s;
+     transition-delay: 400ms;
+     transform: rotate(-10deg);
+   }
+   
+   .share:hover > h1 > span:nth-child(4) {
+     color: #39393B;
+     transition-delay: 440ms;
+   }
+   
+   .share:hover > h1 > span:nth-child(5):after {
+     background: white;
+     width: 100%;
+     transition: 0.6s;
+     transition-delay: 500ms;
+     transform: rotate(-5deg);
+   }
+   
+   .share:hover > h1 > span:nth-child(5) {
+     color: #39393B;
+     transition-delay: 550ms;
+   }
+   
+   .share:hover > h1 > span:nth-child(6):after {
+     background: white;
+     width: 100%;
+     transition: 0.6s;
+     transition-delay: 600ms;
+     transform: rotate(0deg);
+   }
+   
+   .share:hover > h1 > span:nth-child(6) {
+     color: #39393B;
+     transition-delay: 660ms;
+   }
+   
+   .share:hover > h1 > span:nth-child(7):after {
+     background: white;
+     width: 100%;
+     transition: 0.6s;
+     transition-delay: 700ms;
+     transform: rotate(5deg);
+   }
+   
+   .share:hover > h1 > span:nth-child(7) {
+     color: #39393B;
+     transition-delay: 770ms;
+   }
+   
+   .share:hover > h1 > span:nth-child(8):after {
+     background: white;
+     width: 100%;
+     transition: 0.6s;
+     transition-delay: 800ms;
+     transform: rotate(10deg);
+   }
+   
+   .share:hover > h1 > span:nth-child(8) {
+     color: #39393B;
+     transition-delay: 880ms;
+   }
+   
+   .share:hover > h1 > span:nth-child(9):after {
+     background: white;
+     width: 100%;
+     transition: 0.6s;
+     transition-delay: 900ms;
+     transform: rotate(15deg);
+   }
+   
+   .share:hover > h1 > span:nth-child(9) {
+     color: #39393B;
+     transition-delay: 990ms;
+   }
+   
+   .share:hover > h1 > span:nth-child(10):after {
+     background: white;
+     width: 100%;
+     transition: 0.6s;
+     transition-delay: 1000ms;
+     transform: rotate(20deg);
+   }
+   
+   .share:hover > h1 > span:nth-child(10) {
+     color: #39393B;
+     transition-delay: 1100ms;
+   }
+
+/* стили формы*/
+   .regButton {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 6px 24px;
+    cursor: pointer;
+  }
+  .regButton:hover {
+    background: #ccc;
+  }
+  #window {
+    width: 350px;
+    height: 530px;
+    margin: 40px auto;
+    background: #fff5b244;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    z-index: 150;
+    display: none;
+    position: fixed;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+  }
+  .form {
+    width: 275px;
+    margin: -15px auto 20px auto;
+    text-align: center; 
+  }
+  .input {
+    width: 260px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .radio {
+    margin-bottom: 10px;
+  }
+  .close {
+    margin: 10px 0 0 320px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 2px;
+    background: #ccc;
+  }
+  .close:hover {
+    background: #fff;
+  }
+  #gray {
+    opacity: 0.8;
+    padding: 15px;
+    background-color: rgba(1,1,1,0.75);
+    position: fixed;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 100;
+    overflow: auto;
+  }
